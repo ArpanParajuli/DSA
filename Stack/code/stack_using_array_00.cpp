@@ -37,6 +37,11 @@ class MyStack{
       return (index == 0) ? true : false;
    }
 
+   bool isFull()
+   {
+      return (index == 10) ? true : false; 
+   }
+
 
    T top()
    {
@@ -78,4 +83,7 @@ int main()
    {
     cout << "Stack is not empty" << endl;
    }
+
+
+   cout << s1.isFull() << endl;
 }
