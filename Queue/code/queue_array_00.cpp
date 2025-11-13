@@ -41,11 +41,17 @@ class MyQueue{
     {
         return elements[temp];
     }
+
+    int size()
+    {
+      return index;
+    }
 };
 
 int main()
 {
   MyQueue <int> q1(10);
+  
   q1.enqueue(10);
   q1.enqueue(20);
   q1.enqueue(30);
@@ -54,4 +60,6 @@ int main()
 
 
   cout << q1.front() << endl;
+
+  cout << q1.size() << endl;
 }
