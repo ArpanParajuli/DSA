@@ -1,15 +1,12 @@
 #include <iostream>
 using namespace std;
 
-
 template <class T>
 
 class MyQueue{
     private:
     T *elements;
     int index;
-    int temp = 0;
-
 
     public:
     MyQueue(int SizeOfQueue)
@@ -18,28 +15,24 @@ class MyQueue{
       elements = new T[SizeOfQueue];
     }
 
-
     ~MyQueue()
     {
         delete elements; // free heap memory after use
     }
-
 
     MyQueue& enqueue(T value)
     {
       elements[index++] = value;
     }
 
-
     MyQueue& dequeue()
     {
         temp++;
     }
 
-
     T front()
     {
-        return elements[temp];
+        return elements[0];
     }
 
     int size()
@@ -51,7 +44,7 @@ class MyQueue{
 int main()
 {
   MyQueue <int> q1(10);
-  
+
   q1.enqueue(10);
   q1.enqueue(20);
   q1.enqueue(30);
