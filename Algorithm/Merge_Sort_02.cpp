@@ -49,7 +49,8 @@ void mergesort(int a[], int l, int mid , int end){
 
 }
 
-int main(){
+int main()
+{
     int a[] = {1, 6, 7, 10, 12 , 14};
  
 

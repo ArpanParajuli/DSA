@@ -27,6 +27,9 @@ int main()
 
    if(success == false)
    {
-    cout << "Number cannot be founded " << endl;
+     cout << "Number cannot be founded " << endl;
    }
+
+
+   return 0;
 }
