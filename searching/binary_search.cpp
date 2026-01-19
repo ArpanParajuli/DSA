@@ -8,6 +8,10 @@ using namespace std;
 // binary search algorithm
 
 
+// best case : O(1)
+// worst case : O(log n)
+
+
 int BinarySearch(int arr[] , int size ,  int key)
 {
     int low = 0 , high = size - 1;
