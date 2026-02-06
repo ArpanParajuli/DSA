@@ -30,7 +30,8 @@ int BinarySearch(int arr[] , int size ,  int key)
             low = mid + 1;
         }
 
-        else{
+        else
+        {
             high = mid -1;
         }
     }
